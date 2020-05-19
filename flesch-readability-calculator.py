@@ -46,6 +46,6 @@ def main():
     print("score: " + str(round(score, 1)))
 
     outputFile = open("data.txt", "a")
-    outputFile.write(score)
+    outputFile.write(str(score))
 
     return render_template('result.html')
