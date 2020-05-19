@@ -27,6 +27,7 @@ def hello():
 
 @app.route('/mainlocal', methods=['POST'])
 def main():
+    print("in the main method")
     words = len(text.split())
     sentences = text.count(".")
 

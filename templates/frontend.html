@@ -35,12 +35,22 @@
     margin-right: auto;
 
   }
+
+  form
+  {
+    margin: 0 auto;
+    color: white;
+
+    width:200px;
+  }
   </style>
 
   <h1> Flesch Readabilty Score Calculator </h1>
   <h4> Calculates how easy a passage is to read. Scores can be interpreted by the below table </h4>
   <h1></h1>
   <img id="bigpic" src="/static/table.png">
-  <form id="myForm" action ="/uploaderlocal" method ="POST" enctype="multipart/form-data">
+  <h1></h1>
+  <form id="myForm" action ="/mainlocal" method ="POST" enctype="multipart/form-data">
     <textarea placeholder="Enter text here"id="textInput" name ="textInput" rows="4" cols="50">
-    
+    <h5></h5>
+    <input type="submit" name="my-form" value="Calculate">
