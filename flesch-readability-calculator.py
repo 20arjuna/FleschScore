@@ -25,7 +25,7 @@ def calculate_score(words, sentences, syllables):
 def hello():
     return render_template('frontend.html')
 
-@app.route('/mainlocal', methods=['POST'])
+@app.route('/mainlocal', methods=['GET','POST'])
 def main():
     print("in the main method")
     text = request.form.get("textInput", 0)
@@ -45,8 +45,5 @@ def main():
 
     print("score: " + str(round(score, 1)))
 
-    outputFile = open("/static/data.txt", "a")
-    outputFile.write(str(round(score, 1)))
-    outputFile.close()
 
-    return render_template("result.html")
+    return  '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><style>body {background-color: black;} h1{color: white;display: flex;flex-direction: column;justify-content: center;text-align: center;}img {display: block; margin-left: auto;margin-right: auto;}</style><h1>' + str(round(score, 1)) + '</h1>'
