@@ -48,3 +48,5 @@ def main():
     outputFile = open("/static/data.txt", "a")
     outputFile.write(str(round(score, 1)))
     outputFile.close()
+
+    return render_template("result.html")
