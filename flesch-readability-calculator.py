@@ -45,8 +45,8 @@ def main():
 
     print("score: " + str(round(score, 1)))
 
-    outputFile = open("data.txt", "a")
-    outputFile.write(str(round(score, 1)))
-    outputFile.close()
+    # outputFile = open("data.txt", "a")
+    # outputFile.write(str(round(score, 1)))
+    # outputFile.close()
 
-    return render_template('result.html')
+    return '<h1>' + str(round(score, 1)) + '</h1>'
