@@ -1,0 +1,1 @@
+web: gunicorn flesch-readability-calculator:app
