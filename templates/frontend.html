@@ -22,6 +22,19 @@
     justify-content: center;
     text-align: center;
   }
+  textarea
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
   </style>
 
   <h1> Flesch Readabilty Score Calculator </h1>
@@ -29,3 +42,5 @@
   <h1></h1>
   <img id="bigpic" src="/static/table.png" style="display: none;">
   <form id="myForm" action ="/uploaderlocal" method ="POST" enctype="multipart/form-data">
+    <textarea id="textInput" name ="textInput" rows="4" cols="50">
+    <textarea placeholder="Enter text here"?</textarea>
