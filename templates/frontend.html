@@ -36,13 +36,14 @@
 
   }
 
-  form
+  input
   {
-    margin: 0 auto;
-    color: white;
-
-    width:200px;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+
   </style>
 
   <h1> Flesch Readabilty Score Calculator </h1>
@@ -51,6 +52,7 @@
   <img id="bigpic" src="/static/table.png">
   <h1></h1>
   <form id="myForm" action ="/mainlocal" method ="POST" enctype="multipart/form-data">
-    <textarea placeholder="Enter text here"id="textInput" name ="textInput" rows="4" cols="50">
+    <textarea placeholder="Enter text here"id="textInput" name ="textInput" rows="4" cols="50"></textarea>
     <h5></h5>
     <input type="submit" name="my-form" value="Calculate">
+  </form>
