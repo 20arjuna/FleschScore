@@ -1,7 +1,7 @@
 from flask import Flask,render_template, Response, request, redirect, url_for, send_file
 
 app = Flask(__name__)
-
+print("eh")
 def syllable_count(word):
     word = word.lower()
     count = 0
